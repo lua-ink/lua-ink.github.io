@@ -342,6 +342,43 @@
       margin: 0 auto 28px;
     }
 
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      max-width: 760px;
+      margin: 34px auto 30px;
+      text-align: left;
+    }
+
+    .info-card {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      background: rgba(245,239,231,.04);
+    }
+
+    .info-label {
+      color: var(--gold);
+      font-size: .75rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .info-main {
+      color: var(--cream);
+      line-height: 1.8;
+      font-size: .95rem;
+    }
+
+    .info-note {
+      color: var(--muted);
+      font-size: .78rem;
+      margin-top: 8px;
+      line-height: 1.7;
+    }
+
     footer {
       padding: 34px 0;
       color: rgba(245,239,231,.48);
@@ -372,7 +409,8 @@
       }
 
       .section-head,
-      .about-grid {
+      .about-grid,
+      .info-grid {
         grid-template-columns: 1fr;
       }
 
@@ -586,6 +624,30 @@
           ご予約・ご相談はInstagramのDMからお願いします。
           画像の持ち込み、サイズ相談、デザイン相談だけでも大丈夫です。
         </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-label">Address</div>
+            <div class="info-main">
+              高知県高知市エリア
+            </div>
+            <div class="info-note">
+              詳細な住所はご予約確定後にご案内します。
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-label">Hours</div>
+            <div class="info-main">
+              12:00 - LAST<br>
+              完全予約制
+            </div>
+            <div class="info-note">
+              施術中は返信が遅れる場合があります。
+            </div>
+          </div>
+        </div>
+
         <div class="buttons" style="justify-content:center;">
           <a class="btn main" href="https://www.instagram.com/lua.ink.31/" target="_blank" rel="noopener">Instagram DM</a>
           <a class="btn" href="#works">Worksを見る</a>
